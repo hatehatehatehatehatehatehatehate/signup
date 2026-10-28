@@ -1,57 +1,23 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stockfish Chess UI</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app">
     <header>
-      <h1>Stockfish Chess UI</h1>
-      <div class="status" id="status">Loading engine…</div>
+        <h1>Welcome to Our Website!</h1>
     </header>
+    <nav>
+        <a href="home page.html">Home</a>
+        <a href="signup.html">Sign Up</a>
+    </nav>
     <main>
-      <section class="board-area">
-        <div class="eval-bar-outer" title="Evaluation">
-          <div class="eval-bar" id="evalBar" style="width: 50%"></div>
-          <span class="eval-text" id="evalText">0.0</span>
-        </div>
-        <div class="board" id="board"></div>
-        <div class="coordinates files">
-          <span>a</span><span>b</span><span>c</span><span>d</span>
-          <span>e</span><span>f</span><span>g</span><span>h</span>
-        </div>
-      </section>
-      <aside class="panel">
-        <div class="controls">
-          <label>
-            Play as
-            <select id="playerColor">
-              <option value="w">White</option>
-              <option value="b">Black</option>
-            </select>
-          </label>
-          <label>
-            Engine time (ms)
-            <input id="engineTime" type="number" value="800" min="50" step="50" />
-          </label>
-          <div class="buttons">
-            <button id="resetBtn" class="primary">New Game</button>
-            <button id="undoBtn">Undo</button>
-            <button id="evalBtn">Evaluate</button>
-            <button id="engineBtn">Stockfish Move</button>
-          </div>
-        </div>
-        <div class="info">
-          <div class="info-row"><strong>Best move:</strong> <span id="bestMove">—</span></div>
-          <div class="info-row"><strong>Result:</strong> <span id="resultText">—</span></div>
-        </div>
-        <div class="move-list" id="moves"></div>
-      </aside>
+        <p>Explore our website and discover amazing content!</p>
+        <img src="welcome.jpg" alt="Welcome" style="display: block; margin: 0 auto;">
     </main>
-  </div>
-  <script src="app.js"></script>
 </body>
 </html>
